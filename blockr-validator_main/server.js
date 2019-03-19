@@ -28,15 +28,9 @@ app.get('/', (req, res) => {
     res.redirect('/index.html');
 });
 
-// console.log("Start waiting....");
-// if(process.env.IS_BACKUP === 'true') {
-//     console.log("This is the backup node. Waiting 10 seconds");
-//     sleep.sleep(10);
-// } else {
-//     console.log("This is the main node. Waiting 20 seconds");
-//     sleep.sleep(20);
-// }
-// console.log("Stop waiting....");
+console.log("Start waiting....");
+sleep.sleep(10);
+console.log("Stop waiting....");
 
 // Start listening with HTTP (picks random available port)
 const server = http.createServer(app).listen(8000);
