@@ -70,6 +70,7 @@ class Validator {
 
   executeBlockJob() {
     Cron.schedule('*/1 * * * *', () => {
+      console.log("==================STARTING CRON JOB=====================");
       this.keyStorage.getKeypairAsync().then((resultKeyPair) => {
         Database.getBlockchainAsync().then((resultBlock) => {
           const lastBlock = resultBlock[resultBlock.length - 1];
