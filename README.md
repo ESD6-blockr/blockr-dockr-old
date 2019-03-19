@@ -36,9 +36,9 @@ The stack exists of the following applications:
 <br><br>
 
 ## Special thanks:
-<img src="https://avatars2.githubusercontent.com/u/25582889?s=128">
-<img src="https://avatars1.githubusercontent.com/u/31408460?s=128">
-<img src="https://avatars2.githubusercontent.com/u/25610414?s=128">
-<img src="https://avatars3.githubusercontent.com/u/7994007?s=128">
+<a href="https://github.com/roelvdboom"><img src="https://avatars2.githubusercontent.com/u/25582889?s=128"></a>
+<a href="https://github.com/timof97"><img src="https://avatars1.githubusercontent.com/u/31408460?s=128"></a>
+<a href="https://github.com/quintaartsen"><img src="https://avatars2.githubusercontent.com/u/25610414?s=128"></a>
+<a href="https://github.com/saltz"><img src="https://avatars3.githubusercontent.com/u/7994007?s=128"></a>
 
 </div>
