@@ -26,8 +26,6 @@ services:
     build: blockr-validator_main
     ports:
       - "8000:8000"
-    depends_on:
-      - "validator_backup"
     networks:
      - blockr
     restart: always
@@ -38,6 +36,7 @@ services:
     ports:
       - "8001:8000"
     depends_on: 
+      - "validator_main"
       - "mongodb"
       - "p2p"
     networks:
