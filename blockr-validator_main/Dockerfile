@@ -11,7 +11,7 @@ COPY services ./services
 COPY tasks ./tasks
 COPY util ./util
 COPY validator-mongodb ./validator-mongodb
-COPY database ./database
+COPY database_volume ./database
 
 COPY .env ./.env
 COPY server.js ./server.js

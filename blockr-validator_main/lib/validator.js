@@ -1,4 +1,4 @@
-const Database = require('bluckur-database').getInstance(process.env.IS_BACKUP === 'true');
+const Database = require('./database').getInstance(process.env.IS_BACKUP === 'true');
 const BlockchainValidator = require('./validators/blockChainValidator');
 const BlockValidator = require('./validators/blockValidator');
 const TransactionValidator = require('./validators/transactionValidator');
@@ -70,6 +70,7 @@ class Validator {
 
   executeBlockJob() {
     Cron.schedule('*/1 * * * *', () => {
+      console.log("==================STARTING CRON JOB=====================");
       this.keyStorage.getKeypairAsync().then((resultKeyPair) => {
         Database.getBlockchainAsync().then((resultBlock) => {
           const lastBlock = resultBlock[resultBlock.length - 1];

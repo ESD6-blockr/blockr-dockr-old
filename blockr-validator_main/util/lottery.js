@@ -1,7 +1,7 @@
 const Models = require('bluckur-models');
 const HashMap = require('hashmap');
 const seedrandom = require('seedrandom');
-const Database = require('bluckur-database').getInstance(process.env.IS_BACKUP === 'true');
+const Database = require('../lib/database').getInstance(process.env.IS_BACKUP === 'true');
 
 class Lottery {
   /**

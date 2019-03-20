@@ -1,0 +1,6 @@
+.idea/
+
+blockr-validator_main/database_volume/level/blockchain/*
+blockr-validator_main/database_volume/level/globalState/*
+!blockr-validator_main/database_volume/level/blockchain/.gitkeep
+!blockr-validator_main/database_volume/level/globalState/.gitkeep
