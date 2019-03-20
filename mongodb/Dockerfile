@@ -1,2 +1,2 @@
 FROM mongo:latest
-COPY data data
+#COPY data data
