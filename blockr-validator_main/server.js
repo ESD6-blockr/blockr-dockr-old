@@ -14,6 +14,7 @@ const qrCodeGenerator = new QrCodeGenerator();
 const sleep = require('sleep');
 let io = require('socket.io');
 
+
 let sender;
 let node;
 let messager;
@@ -27,9 +28,12 @@ app.use(express.static(`${__dirname}/public`));
 app.get('/', (req, res) => {
     res.redirect('/index.html');
 });
-
 console.log("Start waiting....");
-sleep.sleep(10);
+if (process.env.IS_BACKUP === "true") {
+    sleep.sleep(10);
+} else {
+    sleep.sleep(15);
+}
 console.log("Stop waiting....");
 
 // Start listening with HTTP (picks random available port)
